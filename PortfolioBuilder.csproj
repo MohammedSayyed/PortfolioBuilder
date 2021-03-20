@@ -1,0 +1,287 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1910987C-1D97-486E-9B3C-755A7A668082}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PortfolioBuilder</RootNamespace>
+    <AssemblyName>PortfolioBuilder</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44391</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Home page\homepage.aspx" />
+    <Content Include="Home page\img\app.js" />
+    <Content Include="Home page\img\Design.jpg" />
+    <Content Include="Home page\img\hero-bg.png" />
+    <Content Include="Home page\img\img-1.png" />
+    <Content Include="Home page\img\img-2.png" />
+    <Content Include="Home page\img\Model1.jpeg" />
+    <Content Include="Home page\img\Model2.png" />
+    <Content Include="Home page\img\Model3.png" />
+    <Content Include="Home page\img\Model4.jpeg" />
+    <Content Include="Home page\index.html" />
+    <Content Include="Home page\Login.aspx" />
+    <Content Include="Home page\login.html" />
+    <Content Include="Home page\main.css" />
+    <Content Include="Home page\Signup.aspx" />
+    <Content Include="Home page\signup.html" />
+    <Content Include="Home page\style.css" />
+    <Content Include="Home page\update.aspx" />
+    <Content Include="portfolio\css\base.css" />
+    <Content Include="portfolio\css\font-awesome\css\font-awesome.css" />
+    <Content Include="portfolio\css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="portfolio\css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="portfolio\css\fonts.css" />
+    <Content Include="portfolio\css\main.css" />
+    <Content Include="portfolio\css\micons\fonts\icomoon.svg" />
+    <Content Include="portfolio\css\micons\micons.css" />
+    <Content Include="portfolio\css\vendor.css" />
+    <Content Include="portfolio\favicon.png" />
+    <Content Include="portfolio\fonts\lora\lora-bold-webfont.svg" />
+    <Content Include="portfolio\fonts\lora\lora-bolditalic-webfont.svg" />
+    <Content Include="portfolio\fonts\lora\lora-italic-webfont.svg" />
+    <Content Include="portfolio\fonts\lora\lora-regular-webfont.svg" />
+    <Content Include="portfolio\fonts\lora\stylesheet.css" />
+    <Content Include="portfolio\fonts\poppins\poppins-bold-webfont.svg" />
+    <Content Include="portfolio\fonts\poppins\poppins-light-webfont.svg" />
+    <Content Include="portfolio\fonts\poppins\poppins-medium-webfont.svg" />
+    <Content Include="portfolio\fonts\poppins\poppins-regular-webfont.svg" />
+    <Content Include="portfolio\fonts\poppins\poppins-semibold-webfont.svg" />
+    <Content Include="portfolio\fonts\poppins\stylesheet.css" />
+    <Content Include="portfolio\homepage.aspx" />
+    <Content Include="portfolio\images\bg.jpg" />
+    <Content Include="portfolio\images\intro-bg.jpg" />
+    <Content Include="portfolio\images\logo.jpg" />
+    <Content Include="portfolio\images\logo.png" />
+    <Content Include="portfolio\images\portfolio\beetle.jpg" />
+    <Content Include="portfolio\images\portfolio\clouds.jpg" />
+    <Content Include="portfolio\images\portfolio\liberty.jpg" />
+    <Content Include="portfolio\images\portfolio\lighthouse.jpg" />
+    <Content Include="portfolio\images\portfolio\modals\m-beetle.jpg" />
+    <Content Include="portfolio\images\portfolio\modals\m-clouds.jpg" />
+    <Content Include="portfolio\images\portfolio\modals\m-liberty.jpg" />
+    <Content Include="portfolio\images\portfolio\modals\m-lighthouse.jpg" />
+    <Content Include="portfolio\images\portfolio\modals\m-salad.jpg" />
+    <Content Include="portfolio\images\portfolio\modals\m-shutterbug.jpg" />
+    <Content Include="portfolio\images\portfolio\salad.jpg" />
+    <Content Include="portfolio\images\portfolio\shutterbug.jpg" />
+    <Content Include="portfolio\images\profile-pic.jpg" />
+    <Content Include="portfolio\images\sample-image.jpg" />
+    <Content Include="portfolio\index.html" />
+    <Content Include="portfolio\js\jquery-2.1.3.min.js" />
+    <Content Include="portfolio\js\main.js" />
+    <Content Include="portfolio\js\modernizr.js" />
+    <Content Include="portfolio\js\pace.min.js" />
+    <Content Include="portfolio\js\plugins.js" />
+    <Content Include="portfolio\uploads\Profile Pics\PicsArt_12-03-10.31.41.jpg" />
+    <Content Include="portfolio\Logout.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Home page\homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home page\homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home page\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home page\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home page\Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home page\Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home page\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home page\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home page\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home page\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Home page\Site1.Master" />
+    <None Include="packages.config" />
+    <Content Include="portfolio\css\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="portfolio\css\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="portfolio\css\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="portfolio\css\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="portfolio\css\micons\fonts\icomoon.eot" />
+    <Content Include="portfolio\css\micons\fonts\icomoon.ttf" />
+    <Content Include="portfolio\css\micons\fonts\icomoon.woff" />
+    <Content Include="portfolio\fonts\lora\lora-bold-webfont.eot" />
+    <Content Include="portfolio\fonts\lora\lora-bold-webfont.ttf" />
+    <Content Include="portfolio\fonts\lora\lora-bold-webfont.woff" />
+    <Content Include="portfolio\fonts\lora\lora-bolditalic-webfont.eot" />
+    <Content Include="portfolio\fonts\lora\lora-bolditalic-webfont.ttf" />
+    <Content Include="portfolio\fonts\lora\lora-bolditalic-webfont.woff" />
+    <Content Include="portfolio\fonts\lora\lora-italic-webfont.eot" />
+    <Content Include="portfolio\fonts\lora\lora-italic-webfont.ttf" />
+    <Content Include="portfolio\fonts\lora\lora-italic-webfont.woff" />
+    <Content Include="portfolio\fonts\lora\lora-regular-webfont.eot" />
+    <Content Include="portfolio\fonts\lora\lora-regular-webfont.ttf" />
+    <Content Include="portfolio\fonts\lora\lora-regular-webfont.woff" />
+    <Content Include="portfolio\fonts\poppins\poppins-bold-webfont.eot" />
+    <Content Include="portfolio\fonts\poppins\poppins-bold-webfont.ttf" />
+    <Content Include="portfolio\fonts\poppins\poppins-bold-webfont.woff" />
+    <Content Include="portfolio\fonts\poppins\poppins-bold-webfont.woff2" />
+    <Content Include="portfolio\fonts\poppins\poppins-light-webfont.eot" />
+    <Content Include="portfolio\fonts\poppins\poppins-light-webfont.ttf" />
+    <Content Include="portfolio\fonts\poppins\poppins-light-webfont.woff" />
+    <Content Include="portfolio\fonts\poppins\poppins-light-webfont.woff2" />
+    <Content Include="portfolio\fonts\poppins\poppins-medium-webfont.eot" />
+    <Content Include="portfolio\fonts\poppins\poppins-medium-webfont.ttf" />
+    <Content Include="portfolio\fonts\poppins\poppins-medium-webfont.woff" />
+    <Content Include="portfolio\fonts\poppins\poppins-medium-webfont.woff2" />
+    <Content Include="portfolio\fonts\poppins\poppins-regular-webfont.eot" />
+    <Content Include="portfolio\fonts\poppins\poppins-regular-webfont.ttf" />
+    <Content Include="portfolio\fonts\poppins\poppins-regular-webfont.woff" />
+    <Content Include="portfolio\fonts\poppins\poppins-regular-webfont.woff2" />
+    <Content Include="portfolio\fonts\poppins\poppins-semibold-webfont.eot" />
+    <Content Include="portfolio\fonts\poppins\poppins-semibold-webfont.ttf" />
+    <Content Include="portfolio\fonts\poppins\poppins-semibold-webfont.woff" />
+    <Content Include="portfolio\fonts\poppins\poppins-semibold-webfont.woff2" />
+    <Content Include="portfolio\Site1.Master" />
+    <Content Include="portfolio\uploads\Resume\mohammed-resume.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1819</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44391/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
